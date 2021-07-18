@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt');
-const { model } = require('mongoose');
+// const bcrypt = require('bcrypt');
+// const { model } = require('mongoose');
 
 const userSchema = new Schema({
     fullName: {
         type: String,
+        required: true,
         trim: true,
-        unique: false
     },
     phoneNumber: {
         type: Number,
@@ -17,12 +17,18 @@ const userSchema = new Schema({
     username: {
         type: String,
         required: [true, 'Username is required'],
-        trim: true
+        trim: true,
+        unique: true
     },
     password: {
         type: String,
         required: [true, 'Password is required'],
         trim: true
+    },
+    role: {
+        type: String,
+        trim: true,
+        default: 'customer',
     }
 })
 
