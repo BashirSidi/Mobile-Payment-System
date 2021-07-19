@@ -1,0 +1,8 @@
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-card {
+  margin: 110px auto;
+}
