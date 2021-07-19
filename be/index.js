@@ -21,8 +21,8 @@ app.get('*', (req, res) => {
 	res.json({message: 'Oops... page not found!'});
 });
 
-const PORT = 3005;
-app.listen(config.PORT || 3005, (req, res) => {
+const PORT = 8080;
+app.listen(config.PORT || PORT, (req, res) => {
 	logger.info(`Mobile Payment System app is Running on port ${config.PORT || PORT}`);
 });
 
