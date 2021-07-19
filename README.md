@@ -5,7 +5,7 @@
 This is an app that assist mobile phone users to acess the information of different bills, and also send and revieve from almost everywhere at anytime.
 
 ## Getting Started
-
+ # Backend
 * to register customer POST  = (http://localhost:6000/api/user/register)
 * to get authenticated customers GET = (http://localhost:6000/api/user/active)
 * to get all customers GET = (http://localhost:6000/api/user/get-all-custmers)
@@ -17,7 +17,9 @@ This is an app that assist mobile phone users to acess the information of differ
 * to get all vendors GET = (http://localhost:6000/api/get-all-vendors)
 * to add new vendor POST = (http://localhost:6000/api/vendor)
 
-and so 
+# frontend
+
+* navigate to the readme.md inside the fe dir
 
 ### Dependencies
 
