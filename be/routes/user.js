@@ -21,7 +21,7 @@ router.get("/active", auth, async (req, res) => {
 });
 
 
-router.get('/getUsers',  async (req, res) => {
+router.get('/get-all-customers',  async (req, res) => {
     // console.log(req.userId);
     try {
         const allUsers = await User.find();
