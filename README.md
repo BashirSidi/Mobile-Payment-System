@@ -1,53 +1,47 @@
 # Mobile-Payment-System
 
-Simple overview of use/purpose.
-
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This is an app that assist mobile phone users to acess the information of different bills, and also send and revieve from almost everywhere at anytime.
 
 ## Getting Started
 
+* to register customer POST  = (http://localhost:6000/api/user/register)
+* to get authenticated customers GET = (http://localhost:6000/api/user/active)
+* to get all customers GET = (http://localhost:6000/api/user/get-all-custmers)
+* to login into the system POST = (http://localhost:6000/api/user/get-all-custmers)
+* to get all complains GET = (http://localhost:6000/api/complains)
+* to get add complain POST = (http://localhost:6000/api/complains)
+* to edit complain PUT = (http://localhost:6000/api/complain/:id)
+* to delete complain DELETE = (http://localhost:6000/api/complain/:id)
+* to get all vendors GET = (http://localhost:6000/api/get-all-vendors)
+* to add new vendor POST = (http://localhost:6000/api/vendor)
+
+and so 
+
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* download nodejs on your machine
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* clone the full project from https://github.com/BashirSidi/Mobile-Payment-System
+* cd into be dir. 
+* "npm install" to install to install all the dependencies
+* you're require to have nodejs install on your system
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* run "npm run dev" to start back-end api server
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
-## Authors
+## Author
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Bashir_Sidi [@Bashir Salisu Sidi](https://www.linkedin.com/in/bashir-salisu-sidi-b12366124/)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+* Initial Release
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details

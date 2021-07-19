@@ -25,7 +25,7 @@ const userSchema = new Schema({
         required: [true, 'Password is required'],
         trim: true
     },
-    isAdmin: {type: String, default: 'customer'}
+    role: {type: String, default: 'customer'}
 })
 
 const user = mongoose.model('Users', userSchema);
